@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url("../imgs/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 400px) {
+  body {
+    background-image: url("../imgs/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 500px;
+  }
+}
+.order-card {
+  width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding-bottom: 30px;
+}
+@media (max-width: 400px) {
+  .order-card {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+.order-card .image img {
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+@media (max-width: 400px) {
+  .order-card .image img {
+    max-width: 100%;
+  }
+}
+.order-card .text {
+  padding: 30px 65px;
+  text-align: center;
+}
+@media (max-width: 400px) {
+  .order-card .text {
+    padding: 30px 36px;
+  }
+}
+.order-card .text h2 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 15px;
+  font-size: 27px;
+}
+.order-card .text p {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.6;
+  font-size: 16px;
+}
+.order-card .plan {
+  padding: 20px;
+  width: 84%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+.order-card .plan span {
+  display: flex;
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+  position: relative;
+}
+.order-card .plan span::after {
+  content: "$59.99/year";
+  color: hsl(224, 23%, 55%);
+  position: absolute;
+  bottom: 0;
+  left: 68px;
+  font-weight: 500;
+}
+.order-card .plan span img {
+  margin-right: 20px;
+}
+.order-card .plan a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+.order-card .plan a:hover {
+  opacity: 0.8;
+}
+.order-card button {
+  display: block;
+  width: 84%;
+  margin: 30px auto;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  box-shadow: 0px 10px 20px 0px hsl(245deg 75% 52% / 40%);
+  cursor: pointer;
+}
+.order-card button:hover {
+  opacity: 0.8;
+}
+.order-card a.cancel {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 15px;
+}
+.order-card a.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
